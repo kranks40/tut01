@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Content = () => {
-    const handleNameChange = () => {
-        const names = ["Oketo", "Melissa", "Durwin", "Mellia", "Azalea"];
-        const int = Math.floor(Math.random() * 5);
-        return names[int];
-      };
+  const [names, setNames] = useState('Oketo');
+
+  const handleNameChange = (e) => {
+    e.preventDefault();
+    const names = ["Oketo", "Melissa", "Durwin", "Mellia", "Azalea"];
+    const int = Math.floor(Math.random() * 5);
+    setNames(names[int]);
+  };
+
+  const handleClick = () => {
+    console.log("You clicked me");
+  };
 
   return (
     <main className="content">
-      <p>Hello {handleNameChange()} </p>
+      <p>Hello {names} </p>
+      <button onClick={handleClick}>Click Me</button>
+      <button onClick={handleNameChange}>Change Name</button>
     </main>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;

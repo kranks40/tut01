@@ -32,7 +32,7 @@ body {
 
 .header {
   width: calc(100% - 2px);
-  padding: 0 0.25em;
+  padding: 0.25em;
   background-color: mediumblue;
   color: aliceblue;
   display: flex;
@@ -48,4 +48,14 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
+}
+
+.footer {
+  background-color: mediumblue;
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
 }
