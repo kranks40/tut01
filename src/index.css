@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 1.375rem;
+  font-size: 1rem;
 }
 
 body {
@@ -32,12 +32,13 @@ body {
 
 .header {
   width: 100%;
-  padding: 0 0.25em;
+  padding: 0.5rem;
   background-color: mediumblue;
   color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.375rem;
 }
 
 .content {
@@ -48,6 +49,9 @@ body {
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
+  
+  text-transform:  capitalize;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -57,6 +61,7 @@ body {
   display: grid;
   padding: 0.5rem;
   place-content: center;
+  font-size: 1.375rem;
 }
 
 ul {
@@ -96,7 +101,6 @@ ul li::before {
 
 .item input[type="checkbox"]:focus + label {
   text-decoration: double line-through;
-  
 }
 
 .item > label {
@@ -120,3 +124,84 @@ ul li::before {
   color: red;
   outline: none;
 }
+
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 1rem;
+  padding: 1rem 1rem;
+  background: #808281;
+  /* box-shadow: 5rem 5rem; */
+}
+
+.addForm label {
+  position: absolute;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.addForm input[type="text"] {
+  flex-grow: 1;
+  min-height: 48px;
+  outline: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  
+}
+
+button {
+  height: 48PX;
+  min-width: 48PX;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: midnightblue;
+}
+
+button:hover, button:focus {
+  background: #1A4B79;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 1rem;
+  padding: 1rem 1rem;
+  background: #004E3C;
+}
+
+.searchForm label {
+  position: absolute;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.searchForm input[type="text"] {
+  flex-grow: 1;
+  min-height: 48px;
+  outline: none;
+  border-radius: 0.5rem ;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  
+}
+
+/* .searchbtn {
+  height: 48PX;
+  min-width: 48PX;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: midnightblue;
+  background-color: #E60023;
+}
+
+.searchbtn:hover, .searchbtn:focus {
+  background: #1A4B79;
+} */
